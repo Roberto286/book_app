@@ -14,9 +14,10 @@ import { CardComponent } from './components/card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ChangeBackgroundDirective } from './directives/changeBackground/change-background.directive';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, GridComponent, CardComponent],
+  declarations: [AppComponent, NavbarComponent, GridComponent, CardComponent, ChangeBackgroundDirective],
   imports: [
     BrowserModule,
     AppRoutingModule,
