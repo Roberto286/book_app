@@ -1,10 +1,7 @@
-<mat-grid-list cols="3" rowHeight="1:1" gutterSize="1rem" class="grid">
-  <mat-grid-tile><app-card></app-card></mat-grid-tile>
-  <mat-grid-tile><app-card></app-card></mat-grid-tile>
-  <mat-grid-tile><app-card></app-card></mat-grid-tile>
-  <mat-grid-tile><app-card></app-card></mat-grid-tile>
-  <mat-grid-tile><app-card></app-card></mat-grid-tile>
-  <mat-grid-tile><app-card></app-card></mat-grid-tile>
-  <mat-grid-tile><app-card></app-card></mat-grid-tile>
-  <mat-grid-tile><app-card></app-card></mat-grid-tile>
-</mat-grid-list>
+<div class="container-fluid">
+  <mat-grid-list cols="3" rowHeight="1:1" gutterSize="1rem" class="grid">
+    <mat-grid-tile *ngFor="let book of books"
+      ><app-card [data]="book"></app-card
+    ></mat-grid-tile>
+  </mat-grid-list>
+</div>
