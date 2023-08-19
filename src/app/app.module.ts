@@ -13,6 +13,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { CardComponent } from './components/card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, GridComponent, CardComponent],
@@ -26,6 +27,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     MatButtonModule,
     HttpClientModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
